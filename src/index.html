@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TestCafe + ProseMirror Test</title>
+    <link rel=stylesheet href="https://prosemirror.net/css/editor.css">
+    <style>
+        .placeholder {
+            color: #aaa;
+            font-style: italic;
+            height: 0;
+            pointer-events: none;
+        }
+
+        :focus .placeholder {
+            display: none;
+        }
+
+        .editor {
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Basic editor</h2>
+<div id="plain" class="editor"></div>
+
+<h2>Basic editor with custom placeholder decoration</h2>
+<div id="with-placeholder" class="editor"></div>
+
+</body>
+</html>
